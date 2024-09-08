@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.scroll-hidden {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+}
+
+@keyframes revealText2 {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.text-reveal-left {
+  display: inline-block;
+}
+
+.text-reveal-left span {
+  display: inline-block;
+  animation: revealText2 2s linear forwards;
+  clip-path: inset(0 100% 0 0); /* Initial state to hide text */
+}
+
+@keyframes revealText {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.text-reveal {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.text-reveal span {
+  display: inline-block;
+  animation: revealText 2s linear forwards;
+}
+
+/* blog */
+@layer utilities {
+  .reset-style h1,
+  .reset-style h2,
+  .reset-style h3,
+  .reset-style h4,
+  .reset-style h5,
+  .reset-style h6 {
+    font-size: revert; /* Use the default browser font size for headers */
+    font-weight: revert; /* Use the default browser font weight for headers */
+    margin-top: 10px; /* Use the default browser margin-top for headers */
+  }
+
+  .reset-style h2 {
+    font-size: 25px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    /* border-bottom: 2px solid #00000045; */
+  }
+
+  html.dark .reset-style h2 {
+    /* border-bottom: 2px solid #ffffff5f; */
+  }
+
+  .reset-style h2 {
+    font-size: 22px;
+    margin-top: 30px;
+  }
+
+  .reset-style h3 {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+
+  .reset-style h4 {
+    font-size: 20px;
+  }
+
+  .reset-style pre {
+    overflow-x: scroll;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-top: 10px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .reset-style a {
+    color: rgb(49, 150, 251);
+    font-weight: bold;
+  }
+
+  .reset-style ul,
+  ol {
+    padding-left: 2rem;
+  }
+
+  .reset-style ul > li {
+    list-style: disc;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .reset-style ol > li {
+    list-style: decimal;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .reset-style p {
+    margin-top: 2px;
+    font-size: 15px;
+  }
+
+  .reset-style div[data-oembed-provider] {
+    margin: 10px 0;
+  }
+}
+
+/* ///  */

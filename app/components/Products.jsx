@@ -156,7 +156,7 @@ const Products = () => {
     <div className="px-4 md:px-8 lg:px-[120px]">
       {products?.map((item, index) => {
         return (
-          <div className="flex flex-col">
+          <div className="flex flex-col" key={index}>
             <div className="flex  justify-between">
               <h3 className="text-[#A4243D] font-semibold mb-2">
                 {item?.title}

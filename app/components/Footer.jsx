@@ -104,7 +104,7 @@ const Footer = () => {
       </div>
       <div className="w-full border-t border-black py-5 mt-7 flex flex-col items-center ">
         <span className="text-sm">
-          © 2024 Chicken Store | All rights are reserved
+          © 2024 Graduate Farmer | All rights are reserved
         </span>
         <a
           href="https://redrosesid.in"

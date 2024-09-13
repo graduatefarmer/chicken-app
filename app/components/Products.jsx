@@ -153,11 +153,11 @@ const Products = () => {
     },
   ];
   return (
-    <div className="px-4 md:px-8 lg:px-[120px]">
+    <div className="px-4 md:px-8 lg:px-[60px]">
       {products?.map((item, index) => {
         return (
           <div className="flex flex-col" key={index}>
-            <div className="flex  justify-between">
+            <div className="flex justify-between">
               <h3 className="text-[#A4243D] font-semibold mb-2">
                 {item?.title}
               </h3>
@@ -165,11 +165,11 @@ const Products = () => {
                 View All
               </Link>
             </div>
-            <div className="w-full max-w-6xl mx-auto">
-              <div className="flex overflow-x-scroll scroll-hidden md:hidden items-start w-full h-full space-x-5 py-5">
+            <div className="w-full mx-auto">
+              <div className="flex overflow-x-scroll scroll-hidden items-start w-full h-full space-x-5 py-5 lg:pb-20">
                 {item.items?.map((subItem, index) => (
                   <div
-                    className="min-w-[70%] shadow-xl border border-[#00000029] rounded-md overflow-hidden flex flex-col"
+                    className="min-w-[70%] md:min-w-[270px] md:max-w-[250px] shadow-xl border border-[#00000029] rounded-md overflow-hidden flex flex-col"
                     key={index}
                   >
                     <div className="h-1/2 bg-[#f9f5f1] flex items-center justify-center">

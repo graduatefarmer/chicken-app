@@ -2,8 +2,8 @@ import React from "react";
 
 const WhyUs = () => {
   return (
-    <div className="bg-[#A4243D] text-white p-8 font-sans">
-      <div className="max-w-2xl mx-auto space-y-8">
+    <div className="bg-[#A4243D] text-white font-sans py-[100px] px-4 md:px-8 lg:px-[60px]">
+      <div className="flex flex-col lg:flex-row gap-5">
         <InfoBox
           icon="https://countrychickenco.in/static/media/antibiotic-and-steriod-free-hens.84e3dadb7dd3baae71c4.png"
           description="With an average bunch of 200+ country chickens and an ample amount of farm time to roam free and munch on hydroponics, our chickens are anything but cooped up."
@@ -25,7 +25,7 @@ const WhyUs = () => {
 
 const InfoBox = ({ icon, description }) => {
   return (
-    <div className="flex flex-col items-center text-center">
+    <div className="flex flex-col items-center text-center justify-center">
       <img src={icon} alt="logo" className="w-36 object-contain mb-4" />
       <p className="text-sm">{description}</p>
     </div>

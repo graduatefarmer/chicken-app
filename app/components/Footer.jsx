@@ -3,22 +3,25 @@ import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#FFEFD9] text-black py-8 px-4 md:px-8">
+    <footer className="bg-[#FFEFD9] text-black py-8 px-4 md:px-8 lg:px-[60px]">
       <div className="max-w-6lg mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h2 className="text-lg font-bold mb-4">Resources</h2>
           <ul className="space-y-2">
             {[
-              "About Us",
-              "Our Recipes",
-              "Contact Us",
-              "Terms And Conditions",
-              "Privacy Policy",
-              "Cancellation / Refund Policy",
+              { title: "About Us", url: "#" },
+              { title: "Our Recipes", url: "#" },
+              { title: "Contact Us", url: "#" },
+              { title: "Terms And Conditions", url: "terms-and-condition" },
+              { title: "Privacy Policy", url: "/privacy-policy" },
+              { title: "Refund Policy", url: "#" },
             ].map((item) => (
               <li key={item}>
-                <a href="#" className="hover:text-white text-[12px]">
-                  {item}
+                <a
+                  href={item?.url ?? "#"}
+                  className="hover:text-[#f25454] text-[12px]"
+                >
+                  {item?.title}
                 </a>
               </li>
             ))}
@@ -36,7 +39,10 @@ const Footer = () => {
               "Kadaknath Country Chicken",
             ].map((item) => (
               <li key={item}>
-                <a href="#" className="hover:text-white text-[12px]">
+                <a
+                  href="#"
+                  className="hover:text-[#f25454] transition-all duration-300 ease-in-out text-[12px]"
+                >
                   {item}
                 </a>
               </li>
@@ -50,7 +56,7 @@ const Footer = () => {
             <li>
               <a
                 href="#"
-                className="flex items-center hover:text-white text-[12px]"
+                className="flex items-center hover:text-[#f25454] transition-all duration-300 ease-in-out text-[12px]"
               >
                 <img
                   className="w-8"
@@ -63,7 +69,7 @@ const Footer = () => {
             <li>
               <a
                 href="#"
-                className="flex items-center hover:text-white text-[12px]"
+                className="flex items-center hover:text-[#f25454] transition-all duration-300 ease-in-out text-[12px]"
               >
                 <img
                   className="w-8"
@@ -76,7 +82,7 @@ const Footer = () => {
             <li>
               <a
                 href="#"
-                className="flex items-center hover:text-white text-[12px]"
+                className="flex items-center hover:text-[#f25454] transition-all duration-300 ease-in-out text-[12px]"
               >
                 <img
                   className="w-8"
@@ -89,7 +95,7 @@ const Footer = () => {
             <li>
               <a
                 href="#"
-                className="flex items-center hover:text-white text-[12px]"
+                className="flex items-center hover:text-[#f25454] transition-all duration-300 ease-in-out text-[12px]"
               >
                 <img
                   className="w-8"
@@ -102,14 +108,22 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="w-full border-t border-black py-5 mt-7 flex flex-col items-center ">
+      <div className="w-full border-t border-black pt-5 flex flex-col items-center ">
         <span className="text-sm">
           © 2024 Graduate Farmer | All rights are reserved
         </span>
         <a
-          href="https://redrosesid.in"
+          href="https://careerstudy.in"
           target="_blank"
           className="text-sm flex gap-x-1"
+        >
+          <span>Developed by</span>{" "}
+          <h1 className="font-semibold"> Probir Modak</h1>
+        </a>
+        <a
+          href="https://redrosesid.in"
+          target="_blank"
+          className="text-sm flex gap-x-1 opacity-0"
         >
           <span>Developed by</span>{" "}
           <h1 className="font-semibold"> Redrose Sid</h1>

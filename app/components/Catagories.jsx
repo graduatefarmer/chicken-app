@@ -1,25 +1,42 @@
-import React from "react";
-
+"use client";
+import imdos from "@/lib/imdos";
+import React, { useEffect, useState } from "react";
 const Catagories = () => {
+  const [categories, setCategories] = useState(null);
+  const getData = async () => {
+    const data = await imdos.request("SELECT * FROM categories");
+    setCategories(data);
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
   return (
     <div className="px-4 md:px-8 lg:px-[60px]">
       <h3 className="text-[#A4243D] font-semibold mb-2">Catagories</h3>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-6 gap-3">
-        {[
-          "https://countrychickenco.in/static/media/better-than-broiler.99a5b6ed5bed03431a11.png",
-          "https://countrychickenco.in/static/media/land-cat-freerange.f4ad1aa54f50cfe61e0f.png",
-          "https://countrychickenco.in/static/media/land-cat-village.831207c5a97bf372faaa.png",
-          "https://countrychickenco.in/static/media/land-cat-eggs.a8a473833f1be0fb20d3.png",
-          "https://countrychickenco.in/static/media/land-cat-pickle.57c826bd0d7b35cecb6c.png",
-          "https://countrychickenco.in/static/media/cat-mutton.ba0943710d224f35c37a.png",
-        ]?.map((item, index) => (
-          <img
-            key={index}
-            src={item}
-            alt="catagory image"
-            className="rounded-lg"
-          />
-        ))}
+        {categories ? (
+          categories.map((item, index) => (
+            <div className="border rounded-lg border-[#4544444f]">
+              <img
+                key={index}
+                src={process.env.NEXT_PUBLIC_FILE_PATH + item?.image}
+                alt={item?.title ?? "Image"}
+                className="rounded-lg aspect-square max-w-full max-h-full"
+              />
+            </div>
+          ))
+        ) : (
+          // Skeleton loader when categories are loading
+          <>
+            {Array.from({ length: 4 }).map((_, index) => (
+              <div
+                key={index}
+                className="w-full h-48 bg-gray-300 rounded-lg animate-pulse"
+              ></div>
+            ))}
+          </>
+        )}
       </div>
     </div>
   );

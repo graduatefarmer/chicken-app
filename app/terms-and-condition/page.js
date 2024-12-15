@@ -13,151 +13,167 @@ const TermsAndConditions = () => {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-grow container mx-auto px-4 py-8 mt-[80px]">
-        <h1 className="text-3xl font-bold mb-6">
-          Terms and Conditions for Graduate Farmers
-        </h1>
+        <h1 className="text-3xl font-bold mb-6">Terms and Conditions</h1>
         <p className="mb-4">Last updated: {currentDate}</p>
 
-        <section className="mb-8">
-          <p className="mb-4">
-            Welcome to Graduate Farmers. These terms and conditions outline the
-            rules and regulations for the use of Graduate Farmers' website,
-            located at https://graduatefarmers.com/.
-          </p>
-          <p className="mb-4">
-            By accessing this website, we assume you accept these terms and
-            conditions. Do not continue to use Graduate Farmers if you do not
-            agree to take all of the terms and conditions stated on this page.
-          </p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">1. Definitions</h2>
-          <p className="mb-4">
-            For the purposes of these Terms and Conditions:
-          </p>
-          <ul className="list-disc list-inside mb-4">
-            <li>
-              "Client", "You" and "Your" refers to you, the person accessing
-              this website and accepting these terms and conditions.
-            </li>
-            <li>
-              "The Company", "Ourselves", "We", "Our" and "Us", refers to
-              Graduate Farmers.
-            </li>
-            <li>
-              "Party", "Parties", or "Us", refers to both the Client and
-              ourselves.
-            </li>
-          </ul>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">2. Use License</h2>
-          <p className="mb-4">
-            Permission is granted to temporarily download one copy of the
-            materials (information or software) on Graduate Farmers' website for
-            personal, non-commercial transitory viewing only. This is the grant
-            of a license, not a transfer of title, and under this license you
-            may not:
-          </p>
-          <ul className="list-disc list-inside mb-4">
-            <li>modify or copy the materials;</li>
-            <li>
-              use the materials for any commercial purpose, or for any public
-              display (commercial or non-commercial);
-            </li>
-            <li>
-              attempt to decompile or reverse engineer any software contained on
-              Graduate Farmers' website;
-            </li>
-            <li>
-              remove any copyright or other proprietary notations from the
-              materials; or
-            </li>
-            <li>
-              transfer the materials to another person or "mirror" the materials
-              on any other server.
-            </li>
-          </ul>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">3. Disclaimer</h2>
-          <p className="mb-4">
-            The materials on Graduate Farmers' website are provided on an 'as
-            is' basis. Graduate Farmers makes no warranties, expressed or
-            implied, and hereby disclaims and negates all other warranties
-            including, without limitation, implied warranties or conditions of
-            merchantability, fitness for a particular purpose, or
-            non-infringement of intellectual property or other violation of
-            rights.
-          </p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">4. Limitations</h2>
-          <p className="mb-4">
-            In no event shall Graduate Farmers or its suppliers be liable for
-            any damages (including, without limitation, damages for loss of data
-            or profit, or due to business interruption) arising out of the use
-            or inability to use the materials on Graduate Farmers' website, even
-            if Graduate Farmers or a Graduate Farmers authorized representative
-            has been notified orally or in writing of the possibility of such
-            damage.
-          </p>
-        </section>
-
-        <section className="mb-8">
+        <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">
-            5. Accuracy of Materials
+            Welcome to Graduate Farmer’s Website
           </h2>
-          <p className="mb-4">
-            The materials appearing on Graduate Farmers' website could include
-            technical, typographical, or photographic errors. Graduate Farmers
-            does not warrant that any of the materials on its website are
-            accurate, complete or current. Graduate Farmers may make changes to
-            the materials contained on its website at any time without notice.
-            However Graduate Farmers does not make any commitment to update the
-            materials.
+          <p className="text-lg">
+            These Terms and Conditions (“Terms”) govern your access to and use
+            of the website www.graduatefarmer.com and the purchase of our
+            products, including chickens, eggs, and other offerings. By
+            accessing or using our website, you agree to be bound by these
+            Terms.
           </p>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">6. Links</h2>
-          <p className="mb-4">
-            Graduate Farmers has not reviewed all of the sites linked to its
-            website and is not responsible for the contents of any such linked
-            site. The inclusion of any link does not imply endorsement by
-            Graduate Farmers of the site. Use of any such linked website is at
-            the user's own risk.
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">
+            1. Acceptance of Terms
+          </h2>
+          <p className="text-lg">
+            By accessing or using this website, you accept and agree to comply
+            with these Terms. If you do not agree with any part of these Terms,
+            please do not use our website.
           </p>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">7. Modifications</h2>
-          <p className="mb-4">
-            Graduate Farmers may revise these terms of service for its website
-            at any time without notice. By using this website you are agreeing
-            to be bound by the then current version of these terms of service.
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">
+            2. Account Registration
+          </h2>
+          <p className="text-lg">
+            To make purchases, you may need to create an account. You agree to
+            provide accurate and complete information during registration and
+            keep your account information up to date. You are responsible for
+            maintaining the confidentiality of your account and password and
+            accept responsibility for all activities under your account.
           </p>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">8. Governing Law</h2>
-          <p className="mb-4">
-            These terms and conditions are governed by and construed in
-            accordance with the laws of [Your Country/State] and you irrevocably
-            submit to the exclusive jurisdiction of the courts in that State or
-            location.
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">
+            3. Product Information
+          </h2>
+          <p className="text-lg">
+            Graduate Farmer offers antibiotic-free chickens, eggs, and other
+            farm products. We strive to display accurate information; however,
+            we do not guarantee that product descriptions or other content on
+            the website are error-free. In case of errors, we reserve the right
+            to correct them at any time.
           </p>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Contact Information</h2>
-          <p className="mb-4">
-            If you have any questions about these Terms and Conditions, please
-            contact us at info@graduatefarmers.com.
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">
+            4. Ordering and Payment
+          </h2>
+          <p className="text-lg">
+            <strong>Placing Orders:</strong> By placing an order, you agree to
+            purchase our products. All orders are subject to availability and
+            confirmation of the order price.
+          </p>
+          <p className="text-lg">
+            <strong>Payment:</strong> We accept various payment methods provided
+            at checkout. You agree to pay all charges at the prices in effect at
+            the time of your order.
+          </p>
+          <p className="text-lg">
+            <strong>Order Confirmation:</strong> Once you place an order, we
+            will send an order confirmation to your provided email address.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">
+            5. Shipping and Delivery
+          </h2>
+          <p className="text-lg">
+            We aim to deliver your products in a timely manner. Delivery times
+            are estimates and may vary. We are not responsible for delays caused
+            by external factors, such as weather or transport disruptions.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">
+            6. Returns and Refunds
+          </h2>
+          <p className="text-lg">
+            Due to the nature of perishable products, we do not accept returns
+            on chickens, eggs, or similar items. If you receive a damaged or
+            incorrect product, please contact us within 24 hours, and we will
+            work to resolve the issue.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">
+            7. Intellectual Property
+          </h2>
+          <p className="text-lg">
+            All content on this website, including text, images, logos, and
+            trademarks, is the property of Graduate Farmer or its content
+            suppliers and is protected by copyright and trademark laws.
+            Unauthorized use or reproduction of this content is prohibited.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">
+            8. Limitation of Liability
+          </h2>
+          <p className="text-lg">
+            Graduate Farmer is not liable for any damages arising from the use
+            of, or inability to use, our website or products, including but not
+            limited to indirect, incidental, or consequential damages. Our
+            liability shall be limited to the maximum extent permitted by law.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">9. Indemnification</h2>
+          <p className="text-lg">
+            You agree to indemnify, defend, and hold harmless Graduate Farmer,
+            its directors, employees, and affiliates from any claims,
+            liabilities, damages, and expenses (including legal fees) arising
+            from your use of the website or violation of these Terms.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">10. Governing Law</h2>
+          <p className="text-lg">
+            These Terms and any disputes arising from your use of the website
+            shall be governed by the laws of [Your State/Country], without
+            regard to its conflict of law principles.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">11. Changes to Terms</h2>
+          <p className="text-lg">
+            We may revise these Terms periodically. Any changes will be posted
+            on this page with the “Last Updated” date. Your continued use of our
+            website after changes are posted constitutes acceptance of the new
+            Terms.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">12. Contact Us</h2>
+          <p className="text-lg">
+            If you have any questions or concerns regarding these Terms, please
+            contact us at:
+          </p>
+          <p className="text-lg font-semibold">Graduate Farmer</p>
+          <p className="text-lg">
+            <strong>Email:</strong> bd1894623@gmail.com
+          </p>
+          <p className="text-lg">
+            <strong>Phone:</strong> +91 8723862245
           </p>
         </section>
       </main>

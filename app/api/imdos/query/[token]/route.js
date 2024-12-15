@@ -1,6 +1,9 @@
+import {
+  generateServerAuthKey,
+  generateServerSignature,
+} from "@/lib/utils/server";
+import { encryptJSON } from "@/lib/imdos/encryption";
 import { NextResponse } from "next/server";
-import { encryptJSON } from "@/imdos/encription";
-import { generateServerAuthKey, generateServerSignature } from "@/imdos/secure";
 
 export async function POST(request) {
   try {
@@ -20,9 +23,11 @@ export async function POST(request) {
     });
 
     const response = await apiRequest.json();
+
     if (!apiRequest.ok) {
       throw new Error(response.message);
     }
+
     return NextResponse.json({ data: encryptJSON(response) }, { status: 200 });
   } catch (error) {
     return NextResponse.json(

@@ -13,157 +13,142 @@ const PrivacyPolicy = () => {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-grow container mx-auto px-4 py-8 mt-[80px]">
-        <h1 className="text-3xl font-bold mb-6">
-          Privacy Policy for Graduate Farmers
-        </h1>
+        <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
         <p className="mb-4">Last updated: {currentDate}</p>
 
-        <section className="mb-8">
-          <p className="mb-4">
-            https://graduatefarmers.com website is owned by Graduate Farmers,
-            which is a data controller of your personal data.
-          </p>
-          <p className="mb-4">
-            We have adopted this Privacy Policy, which determines how we are
-            processing the information collected by https://graduatefarmers.com,
-            which also provides the reasons why we must collect certain personal
-            data about you. Therefore, you must read this Privacy Policy before
-            using https://graduatefarmers.com website.
-          </p>
-          <p className="mb-4">
-            We take care of your personal data and undertake to guarantee its
-            confidentiality and security.
-          </p>
-        </section>
-
-        <section className="mb-8">
+        <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">
-            Personal information we collect:
+            Welcome to Graduate Farmer’s Website
           </h2>
-          <p className="mb-4">
-            When you visit the https://graduatefarmers.com, we automatically
-            collect certain information about your device, including information
-            about your web browser, IP address, time zone, and some of the
-            installed cookies on your device. Additionally, as you browse the
-            Site, we collect information about the individual web pages or
-            products you view, what websites or search terms referred you to the
-            Site, and how you interact with the Site. We refer to this
-            automatically-collected information as "Device Information."
-            Moreover, we might collect the personal data you provide to us
-            (including but not limited to Name, Surname, Address, payment
-            information, etc.) during registration to be able to fulfill the
-            agreement.
+          <p className="text-lg">
+            At Graduate Farmer, we prioritize your privacy and are committed to
+            protecting the personal information you share with us. This Privacy
+            Policy outlines how we collect, use, and safeguard your information
+            when you visit our website, www.graduatefarmer.com, to purchase our
+            antibiotic-free chickens and eggs or other products.
           </p>
         </section>
 
-        <section className="mb-8">
+        <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">
-            Why do we process your data?
+            1. Information We Collect
           </h2>
-          <p className="mb-4">
-            Our top priority is customer data security, and, as such, we may
-            process only minimal user data, only as much as it is absolutely
-            necessary to maintain the website. Information collected
-            automatically is used only to identify potential cases of abuse and
-            establish statistical information regarding website usage. This
-            statistical information is not otherwise aggregated in such a way
-            that it would identify any particular user of the system.
+          <p className="text-lg">
+            We collect certain information when you interact with our website,
+            including:
           </p>
-          <p className="mb-4">
-            You can visit the website without telling us who you are or
-            revealing any information, by which someone could identify you as a
-            specific, identifiable individual. If, however, you wish to use some
-            of the website's features, or you wish to receive our newsletter or
-            provide other details by filling a form, you may provide personal
-            data to us, such as your email, first name, last name, city of
-            residence, organization, telephone number. You can choose not to
-            provide us with your personal data, but then you may not be able to
-            take advantage of some of the website's features. For example, you
-            won't be able to receive our Newsletter or contact us directly from
-            the website. Users who are uncertain about what information is
-            mandatory are welcome to contact us via info@graduatefarmers.com.
-          </p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Your rights:</h2>
-          <p className="mb-4">
-            If you are a European resident, you have the following rights
-            related to your personal data:
-          </p>
-          <ul className="list-disc list-inside mb-4">
-            <li>The right to be informed.</li>
-            <li>The right of access.</li>
-            <li>The right to rectification.</li>
-            <li>The right to erasure.</li>
-            <li>The right to restrict processing.</li>
-            <li>The right to data portability.</li>
-            <li>The right to object.</li>
+          <ul className="list-disc pl-6 space-y-2 text-lg">
             <li>
-              Rights in relation to automated decision-making and profiling.
+              <strong>Personal Information:</strong> When you create an account,
+              place an order, or contact us, we may collect personal information
+              such as your name, email address, phone number, shipping address,
+              and payment information.
+            </li>
+            <li>
+              <strong>Automatically Collected Data:</strong> We may collect
+              information about your device, browser type, IP address, and
+              website usage to enhance your browsing experience. This data is
+              collected through cookies and other tracking technologies.
             </li>
           </ul>
-          <p className="mb-4">
-            If you would like to exercise this right, please contact us through
-            the contact information below.
-          </p>
-          <p className="mb-4">
-            Additionally, if you are a European resident, we note that we are
-            processing your information in order to fulfill contracts we might
-            have with you (for example, if you make an order through the Site),
-            or otherwise to pursue our legitimate business interests listed
-            above. Additionally, please note that your information might be
-            transferred outside of Europe, including Canada and the United
-            States.
-          </p>
         </section>
 
-        <section className="mb-8">
+        <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">
-            Links to other websites:
+            2. How We Use Your Information
           </h2>
-          <p className="mb-4">
-            Our website may contain links to other websites that are not owned
-            or controlled by us. Please be aware that we are not responsible for
-            such other websites or third parties' privacy practices. We
-            encourage you to be aware when you leave our website and read the
-            privacy statements of each website that may collect personal
-            information.
+          <p className="text-lg">We use the information we collect to:</p>
+          <ul className="list-disc pl-6 space-y-2 text-lg">
+            <li>
+              Process and fulfill your orders for chickens, eggs, and other
+              products.
+            </li>
+            <li>Improve our website, customer service, and user experience.</li>
+            <li>
+              Send you order updates, promotional information, and other
+              relevant communications (if you opt-in).
+            </li>
+            <li>
+              Analyze website traffic and usage patterns to improve our
+              services.
+            </li>
+          </ul>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">
+            3. Sharing Your Information
+          </h2>
+          <p className="text-lg">
+            We may share your information with third-party service providers,
+            such as payment processors and delivery partners, to fulfill your
+            orders. We ensure these third parties are committed to protecting
+            your data and use it only as necessary to provide their services.
+          </p>
+          <p className="text-lg">
+            We do not sell, trade, or otherwise transfer your personally
+            identifiable information to outside parties without your consent,
+            except to comply with legal obligations or enforce our site
+            policies.
           </p>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Information security:</h2>
-          <p className="mb-4">
-            We secure information you provide on computer servers in a
-            controlled, secure environment, protected from unauthorized access,
-            use, or disclosure. We keep reasonable administrative, technical,
-            and physical safeguards to protect against unauthorized access, use,
-            modification, and personal data disclosure in its control and
-            custody. However, no data transmission over the Internet or wireless
-            network can be guaranteed.
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">4. Data Security</h2>
+          <p className="text-lg">
+            We implement industry-standard security measures to protect your
+            personal information from unauthorized access, alteration, or
+            disclosure. However, please note that no method of online
+            transmission or storage is 100% secure, and we cannot guarantee
+            absolute security.
           </p>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Legal disclosure:</h2>
-          <p className="mb-4">
-            We will disclose any information we collect, use or receive if
-            required or permitted by law, such as to comply with a subpoena or
-            similar legal process, and when we believe in good faith that
-            disclosure is necessary to protect our rights, protect your safety
-            or the safety of others, investigate fraud, or respond to a
-            government request.
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">
+            5. Cookies and Tracking
+          </h2>
+          <p className="text-lg">
+            Our website uses cookies and similar technologies to enhance your
+            browsing experience and collect data on website usage. You can
+            control or disable cookies through your browser settings; however,
+            please note that this may affect website functionality.
           </p>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold mb-4">Contact information:</h2>
-          <p className="mb-4">
-            If you would like to contact us to understand more about this Policy
-            or wish to contact us concerning any matter relating to individual
-            rights and your Personal Information, you may send an email to
-            info@graduatefarmers.com.
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">6. Your Rights</h2>
+          <p className="text-lg">
+            Depending on your location, you may have rights regarding your
+            personal information, including the right to access, correct,
+            delete, or restrict its processing. To exercise these rights, please
+            contact us at [contact email].
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">
+            7. Changes to This Policy
+          </h2>
+          <p className="text-lg">
+            We may update this Privacy Policy from time to time. Any changes
+            will be posted on this page with an updated effective date. We
+            encourage you to review this policy periodically.
+          </p>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">8. Contact Us</h2>
+          <p className="text-lg">
+            For any questions or concerns about this Privacy Policy or our data
+            practices, please contact us at:
+          </p>
+          <p className="text-lg font-semibold">Graduate Farmer</p>
+          <p className="text-lg">
+            <strong>Email:</strong> bd1894623@gmail.com
+          </p>
+          <p className="text-lg">
+            <strong>Phone:</strong> +91 8723862245
           </p>
         </section>
       </main>

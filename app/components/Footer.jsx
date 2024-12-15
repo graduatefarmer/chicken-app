@@ -1,5 +1,4 @@
 import React from "react";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -9,12 +8,10 @@ const Footer = () => {
           <h2 className="text-lg font-bold mb-4">Resources</h2>
           <ul className="space-y-2">
             {[
-              { title: "About Us", url: "#" },
-              { title: "Our Recipes", url: "#" },
-              { title: "Contact Us", url: "#" },
-              { title: "Terms And Conditions", url: "terms-and-condition" },
+              { title: "Home", url: "/" },
+              { title: "About Us", url: "/about-us" },
+              { title: "Terms And Conditions", url: "/terms-and-condition" },
               { title: "Privacy Policy", url: "/privacy-policy" },
-              { title: "Refund Policy", url: "#" },
             ].map((item) => (
               <li key={item}>
                 <a
@@ -55,7 +52,7 @@ const Footer = () => {
           <ul className="space-y-2">
             <li>
               <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=100064150178642"
                 className="flex items-center hover:text-[#f25454] transition-all duration-300 ease-in-out text-[12px]"
               >
                 <img
@@ -66,22 +63,23 @@ const Footer = () => {
                 Facebook
               </a>
             </li>
+
             <li>
               <a
-                href="#"
+                href="https://www.youtube.com/@GraduateFarmer"
                 className="flex items-center hover:text-[#f25454] transition-all duration-300 ease-in-out text-[12px]"
               >
                 <img
                   className="w-8"
-                  src="/assets/social/instagram.png"
+                  src="/assets/social/youtube.png"
                   alt="Instagram"
                 />
-                Instagram
+                Youtube
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="https://wa.me/918720966242?text=Hi%2C%20I%27m%20interested%20to%20connect"
                 className="flex items-center hover:text-[#f25454] transition-all duration-300 ease-in-out text-[12px]"
               >
                 <img
@@ -94,7 +92,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/bapan-das-67a022280/"
                 className="flex items-center hover:text-[#f25454] transition-all duration-300 ease-in-out text-[12px]"
               >
                 <img

@@ -2,7 +2,6 @@ import Nav from "./components/Nav";
 import Banner from "./components/Banner";
 import SearchBox from "./components/SearchBox";
 import Catagories from "./components/Catagories";
-import Discount from "./components/Discount";
 import Products from "./components/Products";
 import WhyUs from "./components/WhyUs";
 import Footer from "./components/Footer";
@@ -13,12 +12,11 @@ export default function Home() {
       <SearchBox />
       <Banner />
       <Catagories />
-      <Discount />
       <Products />
       <WhyUs />
       <Footer />
       <a
-        href="https://wa.me/918638235914?text=Hi%2C%20I'm%20interested%20to%20connect"
+        href="https://wa.me/918720966242?text=Hi%2C%20I'm%20interested%20to%20connect"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-5 text-nowrap right-5 px-3 lg:px-5 py-1 lg:py-2 flex text-black border border-[#fff] bg-white hover:bg-[#A4243D] transition-all duration-500 ease-in-out rounded-full text-center  gap-x-2 items-center"

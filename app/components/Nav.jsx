@@ -53,12 +53,24 @@ const Navbar = () => {
         </div>
         <div className="w-full h-full px-5 pt-5 flex justify-center">
           <div className="text-white font-light flex flex-col space-y-3">
-            <Link href={"/"}>Our Offerings</Link>
+            <div
+              className=" cursor-pointer"
+              onClick={() => {
+                setSidebar(false);
+              }}
+            >
+              Home
+            </div>
             <Link href={"/about-us"}>About Us</Link>
             <Link href={"/privacy-policy"}>Privacy Policy</Link>
             <Link href={"/terms-and-condition"}>Terms & Condition</Link>
-            <Link href={"/contact-us"}>Contact Us</Link>
-            <Link href={"/blog"}>Blog</Link>
+            <Link
+              href={
+                "https://wa.me/918720966242?text=Hi%2C%20I%27m%20interested%20to%20connect"
+              }
+            >
+              Contact Us
+            </Link>
           </div>
         </div>
       </div>

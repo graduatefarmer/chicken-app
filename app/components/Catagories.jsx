@@ -17,7 +17,7 @@ const Catagories = () => {
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-6 gap-3">
         {categories ? (
           categories.map((item, index) => (
-            <div className="border rounded-lg border-[#4544444f]">
+            <div key={index} className="border rounded-lg border-[#4544444f]">
               <img
                 key={index}
                 src={process.env.NEXT_PUBLIC_FILE_PATH + item?.image}

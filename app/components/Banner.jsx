@@ -21,6 +21,7 @@ const ScrollBanner = () => {
   const getData = async () => {
     const data = await imdos.request("SELECT * FROM banners");
     setBanners(data);
+    console.log(data);
   };
 
   useEffect(() => {
